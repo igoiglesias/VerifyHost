@@ -1,0 +1,67 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ferramentas - Ping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferramenta para teste de rede">
+    <meta name="author" content="Igor Iglesias">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+
+    <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">VHost</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ping</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tracert</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+  <div id="ping">
+    <body draggable="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">{{ title }}</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 text-center"></div>
+          <div class="col-md-4">
+            <form role="form" style="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+              <div class="form-group" >
+                <label class="control-label">IP/Site</label>
+                <input class="form-control" id="exampleInputEmail1" placeholder="8.8.8.8"
+                type="text" name="ip">
+              </div>
+              <div class="form-group">
+                <label class="control-label">Qtd</label>
+                <input class="form-control" id="exampleInputPassword1" placeholder="5"
+                type="text" name="n">
+              </div>
+              <button type="submit" v-on:click="pingar(event)" class="btn btn-lg btn-primary">Pingar</button>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/myvue.js"></script>
+  </body>
+
+</html>
