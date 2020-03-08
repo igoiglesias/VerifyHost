@@ -1,8 +1,13 @@
 Vue.component('tab-home',{
-    template: `<h2>Bem vindo ao VHost</h2>`
+    template: `<h2>Bem vindo ao VHost</h2>`,
+    methods: {
+        action(){
+            alert("Oi!");
+        }
+    },
 })
 Vue.component("tab-ping",{
-    template: `<div class="row">
+    template: `<div><div class="row">
             <div class="col-md-12">
               <h1 class="text-center">Ping</h1>
             </div>
@@ -21,16 +26,26 @@ Vue.component("tab-ping",{
                   <input class="form-control" id="exampleInputPassword1" placeholder="5"
                   type="text" name="n">
                 </div>
-                <button type="submit" class="btn btn-lg btn-primary">Pingar</button>
+                <button type="submit" v-on:click="action" class="btn btn-lg btn-primary">Pingar</button>
 
               </form>
 
             </div>
             <div class="col-md-4"></div>
-          </div>`
+          </div></div>`,
+    methods: {
+        action(){
+            alert("Oi!");
+        }
+    },
 })
 Vue.component("tab-tracert",{
-    template: "<h1>Tracert</h1>"
+    template: "<h1>Tracert</h1>",
+    methods: {
+        action(){
+            alert("Oi!");
+        }
+    },
 })
 
 const app = new Vue({
@@ -41,10 +56,11 @@ const app = new Vue({
         tabs:["Home","Ping","Tracert"]
     },
     computed: {
-        tabAtual: function(){
+        tabAtual(){
             //alert("tab-" + this.currentTab.toLowerCase());
             return "tab-" + this.currentTab.toLowerCase();
         }
-    }
+    },
+
 
 });
