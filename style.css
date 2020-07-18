@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 80%;
+
+}
+header{
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+section#teste{
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
