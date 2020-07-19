@@ -1,16 +1,67 @@
-body{
-  margin: 0;
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0 auto;
   padding: 0;
   width: 80%;
 
 }
-header{
+
+body {
+  margin-top: 25px;
+}
+
+header {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+header h2 {
   margin: 0 auto;
   padding: 5px;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+
+}
+
+section#teste {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+section#teste div input {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 200px;
   text-align: center;
 }
-section#teste{
+
+section#teste button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  background-color: #198f48;
+  color: rgb(246, 246, 246);
+  font-size: 18pt;
+  font-weight: 600;
+}
+
+section#result {
   margin: 0 auto;
   padding: 5px;
   text-align: center;
+  width: 80%;
+}
+
+section#result div {
+  border: 1px solid;
+  padding: 5px 5px;
+  margin-top: 5px
 }
